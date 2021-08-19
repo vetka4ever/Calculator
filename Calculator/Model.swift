@@ -38,7 +38,7 @@ class Model
             {
                 return nil
             }
-            return (titleButton == "=" || titleButton == "." || titleButton == "%") ? operation : titleButton
+            return (titleButton == "=" || titleButton == "." || titleButton == "%" || titleButton == "±") ? operation : titleButton
         }
         var newData: (Operand, Operand, String?) = (newFirst, newSecond, newOperation)
         switch titleButton
